@@ -10,9 +10,12 @@ Identifying a data set and answering two interesting questions about the data th
 5. Anthony Ramage [@anthonyramage](https://github.com/anthonyramage)
 6. CJ Tumlin [@CJTumlin](https://github.com/CJTumlin)
 ## Dataset Description
-We have created two models from the data we obtained from https://catalog.data.gov/dataset. The data includes information about car crashes in the state of Maryland. The first model shows the total count of crashes for each month of the year. The two bar charts in each month section represent constant speed crashes vs non-constant speed crashes. Each bar is colored to represent the three different injury levels of each crash - no apparent injury, possible injury, and suspected minor injury.
+The dataset reports the details of crashes within Montgomery County of Maryland and was obtained from https://catalog.data.gov/dataset/crash-reporting-drivers-data. The dimensions of the dataset contain 43 columns and 170218 rows. The data is separated into different main categories - report information: report number, local case number, ACRS report type, and agency name; when and whereabouts of the crash: crash date/time, municipality, latitude, longitude, location, route type, road name, cross-street type, cross-street name, off-road description; involved parties: related non-motorist, person ID, driver at fault, driver substance abuse, non-motorist substance abuse, and injury severity, drivers license state, driver distracted by; collision details: collision type, vehicle damage extent, vehicle first impact locations, vehicle second impact location, vehicle body type, vehicle movement, vehicle continuing dir, and vehicle going dir; vehicle information: vehicle ID, vehicle year, vehicle make, vehicle model, equipment problems; environmental conditions: weather, surface condition, light, traffic control, speed limit; and special circumstances: circumstance, driverless vehicle, and parked vehicle.
 
-The second model is a geographical representation of every crash within the dataset. It shows crash hotspots and could be used to find intersections or portions of roads that have an above average crash rate. The data is further filtered by separating each crash based upon whether or not the driver was in some state of impairment. 
+Almost all of the columns have string data types except for local case number (whole number), crash date/time (Date/Time), speed limit (whole number), vehicle year (whole number), and longitude & latitude (decimal number).
+
+This dataset provided an abundance of information and allowed us to thoroughly build detailed visualizations.
+
 
 ## Our Two Questions Explained
 1. How do the frequency and severity of car crashes vary over different months in Maryland, and are there specific patterns associated with levels of injury severity to drivers when the cars are “moving at a constant speed” vs when they are not “moving at a constant speed”?
